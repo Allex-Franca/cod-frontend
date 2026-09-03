@@ -1,2 +1,2 @@
-# cod-frontend
-Exercicios e mini-projetos das aulas de codificação de frontend no curso do SENAI
+🚀 Frontend Chronicles — SENAI Florianópolis
+Codando telas, caçando bugs e aprendendo com o professor mais simpático da Ilha da Magia. 🧸✨
