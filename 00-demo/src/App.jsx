@@ -25,6 +25,15 @@ function App() {
       <li>Dados e Inteligência de Negócio</li>
       <li>Vendas Técnicas e Sucesso do Cliente</li>
     </ul>
+    <h2>Vou fazer faculdade de outra coisa, ser dev vai me ajudar?</h2>
+    <p>Fazer outra faculdade tendo bagagem de dev não é "jogar conhecimento fora" — é ganhar um superpoder estratégico. No mercado moderno, o profissional mais valioso raramente é o especialista puro de uma única área, mas sim o profissional em "T": alguém com conhecimento profundo em um domínio específico (Sua Nova Faculdade) e alta capacidade técnica transversal (Sua Bagagem de Dev).</p>
+    <ul>
+      <li>Automação e Produtividade Pessoal</li>
+      <li>Análise de Dados Avançada e Pesquisa Científica</li>
+      <li>Empreendedorismo e Soluções Setoriais (HealthTech, LegalTech, EdTech)</li>
+      <li>Engenharia de Prompt e Inteligência Artificial</li>
+      <li>Diferencial Profissional: Unindo Conhecimento Acadêmico e Tecnologia</li>
+    </ul>
    </div>
   )
 }
