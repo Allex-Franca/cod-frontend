@@ -2,27 +2,27 @@ import './App.css'
 
 function App() {
   
-  function testar(){
+ function testar(){
     let nome = prompt("qual seu nome?");
     let BocaDoSapo = nome;
     alert(nome+', seu nome tá na BocaDoSapo ')
-  }
-  function calcularMedia(){
+ }
+ function calcularMedia(){
     let N1 = Number(prompt("qual sua primeira nota?"))
     let N2 = Number(prompt("qual sua segunda nota?"))
     
     let media = Number(N1+N2)/2
 
     alert("sua média: "+media)
-  }
-  function calcularIMC(){
+ }
+ function calcularIMC(){
     let altura = Number(prompt("qual sua altura?"))
     let peso = Number(prompt("qual seu peso?"))
     
     let IMC = Number (peso/(altura*altura))
 
     alert("seu IMC: "+IMC.toFixed(2))
-  }
+ }
  function calcularpontos(){
    let vitorias = Number(prompt("Número de vitórias"))
    let empates = Number(prompt("Número de empates"))
@@ -30,7 +30,7 @@ function App() {
    let pontos = vitorias*3 + empates;
 
    alert("o time teu tem "+pontos+" pontos")
-}
+ }
  function calcularsapatos(){
   let sapatos = Number(prompt("qual o valor do sapatos que você vai trocar:"))
   let trocas = Number(prompt("quantos calçados você quer trocar:"))
@@ -70,8 +70,29 @@ function App() {
     alert("ainda resta o total de R$"+divida_atualizada.toFixed(2)+" a ser pago")
    }
  }
+ function calcularsalario(){
+  let salario = Number(prompt("quanto você recebe em 1 Mês:"))
+  
+  let diario = salario/20
+
+  alert("o salario diário de junin é de R$"+diario.toFixed(2))
+ }
+ function Calcularpeso(){
+  let PBT = Number(prompt("qual o peso bruto:"))
+  let tara = Number(prompt("qual o peso da tara:"))
+
+  let peso_carga = PBT-tara
+
+  alert("o peso da carga é de "+peso_carga+"KG")
+ }
+ function Calcularchances(){
+  let n = Number(prompt("quantas vezes o canditato usou o celular:"))
+  let chance = (0.1/(1+500*n))*100
+
+  alert(chance.toFixed(4)+"% do canditado ser selecionado")
+ }
   return (
-   <div className="cont-app">
+   <div className="body">
     <h1>Javascript no React</h1>
 
     <h2>Exercicios Supimpas</h2>
@@ -81,6 +102,9 @@ function App() {
    <button onClick={calcularDEVS}>Força Devs</button>
    <button onClick={calcularLaranjas}>Pomar</button>
    <button onClick={CalcularDivida}>Divida Sagrada</button>
+   <button onClick={calcularsalario}>Salario</button>
+   <button onClick={Calcularpeso}>telle button</button>
+   <button onClick={Calcularchances}>chances</button>
    <hr/>
 
     <button onClick={testar}>Testar</button>

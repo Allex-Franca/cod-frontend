@@ -1,14 +1,16 @@
 button{
-  background-image: url(https://static.wikia.nocookie.net/bluelock/images/6/6d/Charles.png/revision/latest?cb=20250731185927);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKhMc3LsAn9c46Fd4O40acQGhD_V2axuRk_XDkrpCEsw&s);
   background-repeat:round;
   padding: 10px;
   margin: 10px;
   border-color: gold;
 }
-.cont-app{
-  background-color: black;
-}
 hr{
   background-color: gold;
   border-color: gold;
+}
+body{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOEj4NifNR8GvXfxjfjgSM-dUXmDWrgpjOKxXJBfkowIsf7InXUpxcoJ6w&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-w8-aTUPEB5xvFrTYvtzEWfK_ivomfBfHSzENIUicX1VbqpSPpzMCss&s=10);
+  background-size: auto;
+  
 }
