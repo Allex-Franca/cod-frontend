@@ -1,6 +1,6 @@
 :root {
   --text: hsl(267, 85%, 49%);
-  --text-h:#9F465B;
+  --text-h:rgb(159, 70, 91);
   --bg: #030202;
   --code-bg: gold;
   --accent: #aa3bff;

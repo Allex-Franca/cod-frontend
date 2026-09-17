@@ -91,11 +91,158 @@ function App() {
 
   alert(chance.toFixed(4)+"% do canditado ser selecionado")
  }
+ function calculartelle(){
+   let Peso = Number(prompt("qual o peso do seu produto:"));
+   let distancia = Number(prompt("qual o distancia do seu produto:"));
+   let volume = Number(prompt("qual o volume do seu produto:"));
+
+   let frete = 15+(2*Peso)+(0.05*distancia)+(10*volume)
+
+   alert("o valor do seu frete é R$"+frete.toFixed(2))
+ }
+ function calcularBete(){
+   let Vbruto = Number(prompt("qual o valor bruto faturado hoje:"))
+   let premiaçoes = Number(prompt("qual sera o valor gasto em premiações hoje:"))
+   let presentes = Number(prompt("qual sera o valor gasto em presentes hoje:"))
+   let comissoes= Number(prompt("qual sera o valor gasto em comissões hoje:"))
+
+   let Vliquido = Vbruto-premiaçoes-presentes-comissoes
+
+   alert("o valor que restante é de R$"+Vliquido.toFixed(2))
+ }
+ function calcularGanso(){
+   let suprimentos = Number(prompt("quanto foi gasto em suprimentos e mercadoria"))
+   let ingressos = Number(prompt("quanto foi o faturamento da venda ingressos"))
+   let itens = Number(prompt("quanto foi o faturamento da venda de itens"))
+
+   let faturamento = ingressos + itens
+   let lucroR = faturamento - suprimentos
+   let lucroP = (lucroR/suprimentos)*100
+
+   alert("lucro o em reais foi de R$"+lucroR.toFixed(2)+"\n e o lucro percentual foi de R$"+lucroP+"%")
+ }
+ function calcularbomba(){
+  let shows = Number(prompt("quantos shows você tem marcados:"))
+  let dinheiro = Number(prompt("quantos de dinheiro você tem disponivel"))
+
+
+  let bombas = shows*7
+  let valorbomba=bombas*50
+
+  if(valorbomba<=dinheiro){
+   alert("o total de bombas gastas sera "+bombas+" e o total gasto sera R$"+valorbomba.toFixed(2))
+  }
+  else{
+   alert("o total de bombas gastas sera "+bombas+" mas você não possui dinheiro o suficiente para comprar todas")
+  }
+ }
+ function calcularJuca(){
+   let salario = Number(prompt("digite o valor do seu salario"))
+   let moradia = Number(prompt("quanto você gasta em moradia"))
+   let agua = Number(prompt("quanto você gasta em água"))
+   let luz = Number(prompt("quanto você gasta em luz"))
+   let internet = Number(prompt("quanto você gasta em internet"))
+   let gasolina = Number(prompt("quanto você gasta em gasolina"))
+   let streamings = Number(prompt("quanto você gasta em streamings"))
+   let telefone = Number(prompt("quanto você gasta em telefone"))
+   let lazer = Number(prompt("quanto você gasta em lazer"))
+
+   let total_gasto = moradia+agua+luz+internet+gasolina+streamings+telefone+lazer
+   let Vfinal = salario-total_gasto
+
+   if(Vfinal>=0   ){
+      alert("o valor que lhe restou foi de R$"+Vfinal.toFixed(2))
+   }
+   else{
+      alert("lhe falta dinheiro para pagar todas sua dispesas")
+   }
+ }
+ function Calculartinta(){
+   let compra = Number(prompt("qual foi o valor do quadro que você comprou:"))
+   let venda = compra*3
+   
+   alert("o preço so seu produto sera de R$"+venda)
+ }
+ function Calcularracao(){
+   let racao = Number(prompt("quantas gramas de ração você vai levar:"))
+   let peso_gramas = (racao/1000)*10
+
+   alert("o preço total sera de "+peso_gramas.toFixed(2))
+ }
+ function calcularchurras(){
+   let pessoas = Number(prompt("Quantas pessoas ao todo:"));
+   let adultosCarne = Number(prompt("Quantos adultos comem carne:"));
+   let criancasCarne = Number(prompt("Quantas crianças comem carne:"));
+   let pessoascerveja = Number(prompt("quantas pessoas bebem cerveja:"))
+   let pessoasCe = pessoascerveja
+   let nivel = prompt("digite o nivel da sua compra \nleve\nmedio\nmonstro")
+   let carne = ""
+   let cerveja = ""
+   let agua = ""
+   let refri = ""
+   let carvao = ""
+   let sal = ""
+
+   if(nivel == "leve"){
+   carne = (adultosCarne * 0.5) + (criancasCarne * 0.25); 
+   cerveja = pessoasCe*1
+   agua = pessoas*0.5
+   refri = pessoas*0.2
+   carvao = pessoas*0.5
+   sal = pessoas*0.25
+
+   alert("o quantia final de tudo sera de\n"+carne+"KG de carne\n"+cerveja+"L de cerveja\n"+agua+"L de água\n"+refri+"L de refri\n"+carvao+"KG de carvão\n"+sal+"KG de sal")
+   }
+   else if(nivel == "medio"){
+   carne = (adultosCarne * 1) + (criancasCarne * 0.5);
+   cerveja = pessoasCe*2
+   agua = pessoas*1
+   refri = pessoas*0.5
+   carvao = pessoas*1
+   sal = pessoas*0.5
+
+   alert("o quantia final de tudo sera de\n"+carne+"KG de carne\n"+cerveja+"L de cerveja\n"+agua+"L de água\n"+refri+"L de refri\n"+carvao+"KG de carvão\n"+sal+"KG de sal")
+   }
+   else if(nivel == "monstro"){
+   carne = (adultosCarne * 2) + (criancasCarne * 1);
+   cerveja = pessoasCe*4
+   agua = pessoas*2
+   refri = pessoas*1
+   carvao = pessoas*2
+   sal = pessoas*1
+
+   alert("o quantia final de tudo sera de\n"+carne+"KG de carne\n"+cerveja+"L de cerveja\n"+agua+"L de água\n"+refri+"L de refri\n"+carvao+"KG de carvão\n"+sal+"KG de sal")
+   }
+    let racha = prompt("Deseja calcular o racha?\nsim\nnao");
+
+    if(racha == "sim"){
+        let valor = Number(prompt("Qual foi o valor total gasto?"));
+        let pessoasRacha = Number(prompt("Quantas pessoas vao dividir?"));
+
+        let valorI = valor / pessoasRacha;
+
+        alert("Cada pessoa vai pagar R$" + valorI.toFixed(2));
+    }
+ }
   return (
    <div className="body">
     <h1>Javascript no React</h1>
 
     <h2>Exercicios Supimpas</h2>
+   
+   
+   <hr />
+   
+   <button onClick={calculartelle}>telles</button>
+   <button onClick={calcularBete}>TA PAGANDO</button>
+   <button onClick={calcularGanso}>GANSO</button>
+   <button onClick={calcularbomba}>Bomba</button>
+   <button onClick={calcularJuca}>dispesas</button>
+   <button onClick={Calculartinta}>quadro</button>
+   <button onClick={Calcularracao}>ração</button>
+   <button onClick={calcularchurras}>E O CHURRAS MEU</button>
+   
+   <hr />
 
    <button onClick={calcularpontos}>Campeonato</button>
    <button onClick={calcularsapatos}>Troca pé pequeno</button>
@@ -105,6 +252,7 @@ function App() {
    <button onClick={calcularsalario}>Salario</button>
    <button onClick={Calcularpeso}>telle button</button>
    <button onClick={Calcularchances}>chances</button>
+   
    <hr/>
 
     <button onClick={testar}>Testar</button>
