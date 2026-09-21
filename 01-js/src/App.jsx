@@ -262,25 +262,26 @@ function App() {
   let mediaTempoPF = (tempoPF * 60) / relatoriosPF;
   let mediaTempoPJ = (tempoPJ * 60) / relatoriosPJ;
 
-  alert(`=== RELATÓRIO KOWALSKI ===
-  DADOS PF:
-  Relatórios: ${relatoriosPF}
-  Tempo: ${tempoPF} horas
-  Valor recebido: R$ ${valorPF.toFixed(2)}
-  Média por relatório: R$ ${mediaValorPF.toFixed(2)}
-  Tempo médio por relatório: ${mediaTempoPF.toFixed(0)} minutos
+  alert("=== RELATÓRIO KOWALSKI ===\n"+
+  "DADOS PF:\n" +
+  "Relatórios: " + relatoriosPF + "\n" +
+  "Tempo: " + tempoPF + " horas\n" +
+  "Valor: R$ " + valorPF.toFixed(2) + "\n" +
+  "Média por relatório: R$ " + mediaValorPF.toFixed(2) + "\n" +
+  "Tempo médio: " + mediaTempoPF.toFixed(0) + " minutos\n\n" +
 
-  DADOS PJ:
-  Relatórios: ${relatoriosPJ}
-  Tempo: ${tempoPJ} horas
-  Valor recebido: R$ ${valorPJ.toFixed(2)}
-  Média por relatório: R$ ${mediaValorPJ.toFixed(2)}
-  Tempo médio por relatório: ${mediaTempoPJ.toFixed(0)} minutos
-  
-  RESUMO:
-  Total de relatórios: ${totalRelatorios}
-  Tempo total: ${tempoTotal} horas
-  Valor total recebido: R$ ${valorTotal.toFixed(2)}`);
+  "DADOS PJ:\n" +
+  "Relatórios: " + relatoriosPJ + "\n" +
+  "Tempo: " + tempoPJ + " horas\n" +
+  "Valor: R$ " + valorPJ.toFixed(2) + "\n" +
+  "Média por relatório: R$ " + mediaValorPJ.toFixed(2) + "\n" +
+  "Tempo médio: " + mediaTempoPJ.toFixed(0) + " minutos\n\n" +
+
+  "RESUMO:\n" +
+  "Total de relatórios: " + totalRelatorios + "\n" +
+  "Tempo total: " + tempoTotal + " horas\n" +
+  "Valor total: R$ " + valorTotal.toFixed(2)
+);
  }
   return (
    <div className="body">
