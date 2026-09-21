@@ -224,12 +224,74 @@ function App() {
         alert("Cada pessoa vai pagar R$" + valorI.toFixed(2));
     }
  }
+ function calcularjacares(){
+  let caminhoes = Number(prompt("Quantos caminhões serão necessários?"));
+  let jacares = caminhoes * 50;
+  let receita = jacares * 90;
+  let custo = caminhoes * 450;
+  let lucroJ = receita - custo;
+
+  alert("o lucro da temporada sera de R$"+lucroJ.toFixed(2))
+ }
+ function calcularIA(){
+  let Prompt = prompt("digite seu prompt")
+  let token = Prompt.length + 5
+  let valorT = token*2
+  alert("o total de tokens gasto foi "+token+" tokens\ne o valor em R$"+valorT.toFixed(2))
+ }
+ function calcularjunin(){
+  let horas = Number(prompt("quantas horas de trabalho"))
+  let serviço = (350*horas)+500
+  let lucro = horas * 350
+
+  alert("Valor do serviço: R$ " + serviço + "\nLucro: R$ " + lucro)
+ }
+ function relatorio(){
+  let relatoriosPF = 40;
+  let relatoriosPJ = 33;
+  let tempoPF = 12;
+  let tempoPJ = 42;
+  let valorPF = 2350;
+  let valorPJ = 8900;
+
+  let totalRelatorios = relatoriosPF + relatoriosPJ;
+  let tempoTotal = tempoPF + tempoPJ;
+  let valorTotal = valorPF + valorPJ;
+  let mediaValorPF = valorPF / relatoriosPF;
+  let mediaValorPJ = valorPJ / relatoriosPJ;
+  let mediaTempoPF = (tempoPF * 60) / relatoriosPF;
+  let mediaTempoPJ = (tempoPJ * 60) / relatoriosPJ;
+
+  alert(`=== RELATÓRIO KOWALSKI ===
+  DADOS PF:
+  Relatórios: ${relatoriosPF}
+  Tempo: ${tempoPF} horas
+  Valor recebido: R$ ${valorPF.toFixed(2)}
+  Média por relatório: R$ ${mediaValorPF.toFixed(2)}
+  Tempo médio por relatório: ${mediaTempoPF.toFixed(0)} minutos
+
+  DADOS PJ:
+  Relatórios: ${relatoriosPJ}
+  Tempo: ${tempoPJ} horas
+  Valor recebido: R$ ${valorPJ.toFixed(2)}
+  Média por relatório: R$ ${mediaValorPJ.toFixed(2)}
+  Tempo médio por relatório: ${mediaTempoPJ.toFixed(0)} minutos
+  
+  RESUMO:
+  Total de relatórios: ${totalRelatorios}
+  Tempo total: ${tempoTotal} horas
+  Valor total recebido: R$ ${valorTotal.toFixed(2)}`);
+ }
   return (
    <div className="body">
     <h1>Javascript no React</h1>
 
     <h2>Exercicios Supimpas</h2>
    
+   <button onClick={calcularjacares}>Jacas</button>
+   <button onClick={calcularIA}>IA</button>
+   <button onClick={calcularjunin}>JUNIN</button>
+   <button onClick={relatorio}>Kowalski relatorio</button>
    
    <hr />
    
