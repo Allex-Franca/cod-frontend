@@ -7,7 +7,8 @@
   --cor-borda: #e5e5e5;
   --cor-borda-clara: #ccc;
   --cor-fundo: #fff;
-  --cor-escura: #000 --largura-maxima: 1100px;
+  --cor-escura: #000 ;
+  --largura-maxima: 1100px;
   --padding-lateral: 24px;
 
   --raio-pequeno: 6px;
