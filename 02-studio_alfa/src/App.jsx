@@ -1,14 +1,13 @@
-import Header from "./components/Header/Header"
+import Header from "./components/Header/Header";
 
-
-function App (){
-  return(
+function App() {
+  return (
     <>
-      <Header/>
+      <Header />
       {/* <main></main>
       <footer></footer> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

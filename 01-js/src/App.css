@@ -1,15 +1,15 @@
-button{
+button {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKhMc3LsAn9c46Fd4O40acQGhD_V2axuRk_XDkrpCEsw&s);
-  background-repeat:round;
+  background-repeat: round;
   padding: 10px;
   margin: 10px;
   border-color: rgb(159, 70, 91);
 }
-hr{
+hr {
   background-color: gold;
   border-color: rgb(159, 70, 91);
 }
-body{
+body {
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOEj4NifNR8GvXfxjfjgSM-dUXmDWrgpjOKxXJBfkowIsf7InXUpxcoJ6w&s=10);
   background-size: auto;
   background-repeat: no-repeat;
