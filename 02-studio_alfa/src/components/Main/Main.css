@@ -44,6 +44,7 @@
   border: 1px solid var(--cor-escura);
   color: var(--cor-escura);
 }
+
 .btn-secondary {
   color: var(--cor-primaria);
   padding: 12px 24px;
@@ -53,7 +54,13 @@
   transition: background-color 0.2;
   border: 1px solid var(--cor-escura);
 }
+
 .btn-secondary:hover {
   background-color: var(--cor-primaria);
   color: var(--cor-fundo);
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
