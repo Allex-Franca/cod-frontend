@@ -6,7 +6,7 @@ function Footer() {
       <div className="footer-container">
         <span>&copy; 2026 studio perfeito</span>
         <div className="footer-icons">
-          <a href="#">
+          <a href="https://www.clickjogos.com.br/jogos-de-acao/fireboy-and-watergirl-1-in-forest-temple">
             <img src="..\..\src\assets\img\insta.png" alt="" />
           </a>
           <a href="#">
