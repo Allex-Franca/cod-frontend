@@ -32,12 +32,12 @@ function Main() {
               <p>O mesmo site em qualquer tela.</p>
             </div>
           </div>
-            <div className="servico-card">
-              <span>🚀</span>
-              <h3>Perfomace</h3>
-              <p>Páginas leves que carragam rapidamente com perfeição</p>
-            </div>
+          <div className="servico-card">
+            <span>🚀</span>
+            <h3>Perfomace</h3>
+            <p>Páginas leves que carragam rapido</p>
           </div>
+        </div>
       </section>
     </main>
   );

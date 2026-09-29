@@ -1,0 +1,29 @@
+.footer {
+  border-top: 1px solid var(--cor-borda);
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  padding: 0 var(--padding-lateral);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer span {
+  font-size: 14px;
+  color: var(--cor-texto-claro);
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+}
