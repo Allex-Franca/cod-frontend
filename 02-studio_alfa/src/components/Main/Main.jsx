@@ -25,22 +25,19 @@ function Main() {
             <h3>Design Design</h3>
             <p>telas claras, pensadas para o usuário.</p>
           </div>
-
-          <div className="servicos-grid">
+          <div>
             <div className="servico-card">
               <span>📱</span>
               <h3>Responsividade</h3>
               <p>O mesmo site em qualquer tela.</p>
             </div>
           </div>
-          <div className="servicos-grid">
             <div className="servico-card">
               <span>🚀</span>
               <h3>Perfomace</h3>
               <p>Páginas leves que carragam rapidamente com perfeição</p>
             </div>
           </div>
-        </div>
       </section>
     </main>
   );
