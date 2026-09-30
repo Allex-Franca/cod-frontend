@@ -1,9 +1,11 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [resultado, setResutado] = useState(0);
+
   function testar() {
     let nome = prompt("qual seu nome?");
-    let BocaDoSapo = nome;
     alert(nome + ", seu nome tá na BocaDoSapo ");
   }
   function calcularMedia() {
@@ -385,9 +387,22 @@ function App() {
         valorTotal.toFixed(2),
     );
   }
+  function Calculardobro() {
+    let N1 = Number(prompt("insira um número"));
+    let dobro = N1 * 2;
+    setResutado(dobro);
+  }
   return (
     <div className="body">
       <h1>Javascript no React</h1>
+
+      <hr />
+      <h2>usando estados</h2>
+      <button onClick={Calculardobro}>Estados - dobro</button>
+
+      <p>Resultado da operação: {resultado} </p>
+
+      <hr />
 
       <h2>Exercicios Supimpas</h2>
 
