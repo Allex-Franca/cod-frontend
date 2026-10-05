@@ -1,4 +1,5 @@
 import "./Main.css";
+import ServicoCard from "../ServicoCard/ServicoCard";
 
 function Main() {
   return (
@@ -20,23 +21,21 @@ function Main() {
       <section className="service">
         <h2>Nossos serviços</h2>
         <div className="servicos-grid">
-          <div className="servico-card">
-            <span>🪟</span>
-            <h3>Design Design</h3>
-            <p>telas claras, pensadas para o usuário.</p>
-          </div>
-          <div>
-            <div className="servico-card">
-              <span>📱</span>
-              <h3>Responsividade</h3>
-              <p>O mesmo site em qualquer tela.</p>
-            </div>
-          </div>
-          <div className="servico-card">
-            <span>🚀</span>
-            <h3>Perfomace</h3>
-            <p>Páginas leves que carragam rapido</p>
-          </div>
+          <ServicoCard
+            titulo="Design de Interface"
+            icone="🪟"
+            descricao="Telas claras, pensadas para o usuário"
+          />
+          <ServicoCard
+            titulo="Responsividade"
+            icone="📱"
+            descricao="O mesmo site em qualquer tela"
+          />
+          <ServicoCard
+            titulo="Performace"
+            icone="🚀"
+            descricao="Páginas leves que carregam rápido"
+          />
         </div>
       </section>
     </main>
