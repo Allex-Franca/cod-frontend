@@ -23,6 +23,21 @@
   margin: 0 auto 32px;
   line-height: 1.6;
 }
+.service {
+  padding: 60px 0;
+}
+
+.service h2 {
+  font-size: 22px;
+  color: var(--cor-titulo);
+  margin-bottom: 32px;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .hero-buttons {
   display: flex;
   justify-content: center;
@@ -58,21 +73,6 @@
 .btn-secondary:hover {
   background-color: var(--cor-primaria);
   color: var(--cor-fundo);
-}
-
-.service {
-  padding: 60px 0;
-}
-
-.service h2 {
-  font-size: 22px;
-  color: var(--cor-titulo);
-  margin-bottom: 32px;
-}
-
-.servicos-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 
