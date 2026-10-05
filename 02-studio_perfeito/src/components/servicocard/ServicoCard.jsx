@@ -1,6 +1,6 @@
 import "./ServicoCard.css";
 
-function ServicoCard({icone, titulo, descricao}) {
+function ServicoCard({ icone, titulo, descricao }) {
   return (
     <div className="servico-card">
       <span>{icone}</span>
