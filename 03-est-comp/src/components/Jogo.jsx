@@ -20,9 +20,10 @@ function Jogo() {
     }
   return (
       <div className='Jogo'>
-      {resultado}
       <h2>Jogo do mano juca</h2>
     <button onClick={classificar}>Classificar</button> 
+    <br />
+      {resultado}
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import "./App.css";
 import IMC from "./components/IMC";
 import Jogo from "./components/Jogo";
-import Macas from "./components/macas";
 import Pousada from "./components/Pousada";
 import Voto from "./components/Voto";
+import Macas from "./components/Macas";
+
 
 function App() {
 

@@ -19,7 +19,8 @@ function IMC() {
     <div className="IMC">
       <h2>Peso ideal</h2>
       <button onClick={calcularPeso}>Calcular</button>
-      <p>Peso ideal: {pesoIdeal.toFixed(2)} kg</p>
+      <br />
+      {pesoIdeal.toFixed(2)}
     </div>
   );
 }

@@ -22,9 +22,10 @@ function Pousada() {
 
   return (
     <div className="pousada">
-      {total.toFixed(2)}
       <h2>Pousada, oba!!</h2>
       <button onClick={pousada}>Pousada</button>
+      <br />
+      {total.toFixed(2)}
     </div>
   );
 }
