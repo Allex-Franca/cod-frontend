@@ -25,7 +25,7 @@ function Pousada() {
       <h2>Pousada, oba!!</h2>
       <button onClick={pousada}>Pousada</button>
       <br />
-      {total.toFixed(2)}
+      R${total.toFixed(2)}
     </div>
   );
 }

@@ -15,7 +15,7 @@ function Macas() {
       <h2>Maças</h2>
       <button onClick={calcularMacas}>Pagar Maças</button>
       <br />
-      {Cmacas.toFixed(2)}
+      R${Cmacas.toFixed(2)}
     </div>
   );
 }

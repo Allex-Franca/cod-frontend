@@ -20,7 +20,7 @@ function IMC() {
       <h2>Peso ideal</h2>
       <button onClick={calcularPeso}>Calcular</button>
       <br />
-      {pesoIdeal.toFixed(2)}
+      {pesoIdeal.toFixed(2)}KG
     </div>
   );
 }
