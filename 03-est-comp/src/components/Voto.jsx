@@ -19,7 +19,7 @@ function Voto() {
   return (
       <div className='Voto'>
       <h2>Voto</h2>
-    <button onClick={votacao}>votacao</button>
+    <button onClick={votacao}>votação</button>
     <br />
       {voto}
     </div>
