@@ -6,13 +6,13 @@ function Entrada() {
         let som = prompt("o som esta ligado?")
         let figurino = prompt("o figurino esta pronto?")
 
-        if(som === "sim" && figurino === "sim"){
+        if(som.toLocaleLowerCase() === "sim" && figurino.toLocaleLowerCase() === "sim"){
             setResultado("Palco liberado para Sarumano! Luzes, câmera, ilusão!")
         }
-        else if (som === "não" && figurino === "sim"){
+        else if (som.toLocaleLowerCase() === "não" && figurino.toLocaleLowerCase() === "sim"){
             setResultado("Sem som. Realizar apresentação alternativa no salão.")
         }
-        else if (som === "sim" && figurino === "não"){
+        else if (som.toLocaleLowerCase() === "sim" && figurino.toLocaleLowerCase() === "não"){
             setResultado("Faltando parte do figurino. Te vira no improviso!")
         }
         else{

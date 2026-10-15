@@ -7,9 +7,9 @@ function Recrutamento() {
     let idade = Number(prompt("qual sua idade?"));
     let recomendação = prompt("tem recomendação?");
 
-    if (nadar === "sim" || (idade >= 16 && recomendação !== "sim")) {
+    if (nadar.toLocaleLowerCase() === "sim" || (idade >= 16 && recomendação.toLocaleLowerCase() !== "sim")) {
       setRecrutar("Aprovado para o navio!");
-    } else if (nadar === "não" && idade >= 14 && recomendação === "sim") {
+    } else if (nadar.toLocaleLowerCase() === "não" && idade >= 14 && recomendação.toLocaleLowerCase() === "sim") {
       setRecrutar(
         "Aprovado sob recomendação. Monitorar nas primeiras viagens.",
       );

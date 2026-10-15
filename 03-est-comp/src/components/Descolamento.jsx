@@ -6,7 +6,7 @@ function Descolamento() {
         let gripe = prompt("Esta gripado?")
         let tempoviagem = Number(prompt("qual o tempo de viagem até a festa?"))
 
-        if(gripe === "não" && tempoviagem <= 45){
+        if(gripe.toLocaleLowerCase() === "não" && tempoviagem <= 45){
             setResultado("Viagem autorizada. Rumo ao show!")
         }
         else(setResultado("Deslocamento inviável. Melhor recusar este evento."))

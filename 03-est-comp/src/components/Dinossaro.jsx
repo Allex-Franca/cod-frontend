@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 function Dinossaro() {
     const[resultado,setResultado]=useState();
     function Transporte(){
-        let Manutencao = prompt("A manutenção esta ativa?")
-        let Emergencia = prompt("A emergencia esta ativa?")
+        let manutencao = prompt("A manutenção esta ativa?")
+        let emergencia = prompt("A emergencia esta ativa?")
 
-        if (Emergencia === "não" && Manutencao === "não"){
+        if (emergencia.toLocaleLowerCase() === "não" && manutencao.toLocaleLowerCase() === "não"){
             setResultado("Transporte liberado para uso.")
         }
         else{
