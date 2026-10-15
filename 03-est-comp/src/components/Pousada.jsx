@@ -4,18 +4,18 @@ function Pousada() {
   const [total, setTotal] = useState(0);
 
   function pousada() {
-    let Dias = Number(prompt("Quantos dias você vai passar na pousada?"));
+    let dias = Number(prompt("Quantos dias você vai passar na pousada?"));
     let diaria = "";
 
-    if (Dias <= 5) {
+    if (dias <= 5) {
       diaria = 100;
-    } else if (Dias >= 6 && Dias <= 10) {
+    } else if (dias >= 6 && dias <= 10) {
       diaria = 90;
     } else {
       diaria = 80;
     }
 
-    let valor = Dias * diaria * 0.75 + 150;
+    let valor = dias * diaria * 0.75 + 150;
 
     setTotal(valor);
   }
