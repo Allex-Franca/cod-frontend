@@ -112,6 +112,8 @@ code {
 }
 button{
   border-radius: 10px;
-  border-color: red;
+  border-color: purple;
   border-style:solid;
+  cursor:pointer;
+  font-size: 10px;
 }
