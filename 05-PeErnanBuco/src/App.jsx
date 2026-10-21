@@ -20,16 +20,16 @@ function App() {
         <button onClick={() => setPagina(-1)}>Menu</button>
       <hr />
       <nav>
-        <button onClick={() => setPagina(0)}>Oração Dev Web</button>
-        <button onClick={() => setPagina(1)}>Oração Dev Frontend</button>
-        <button onClick={() => setPagina(2)}>Oração Do Backend</button>
-        <button onClick={() => setPagina(3)}>Oração Do Fullstack</button>
-        <button onClick={() => setPagina(4)}>Oração Do Deploy</button>
-        <button onClick={() => setPagina(5)}>Oração Do Programador</button>
-        <button onClick={() => setPagina(6)}>Oração Do Estudante</button>
-        <button onClick={() => setPagina(7)}>Oração Do Resiliente</button>
-        <button onClick={() => setPagina(8)}>Oração Do Aprendiz</button>
-        <button onClick={() => setPagina(9)}>Oração Do DevCansado</button>
+        <button onClick={() => setPagina(0)}>DevWeb</button>
+        <button onClick={() => setPagina(1)}>DevFrontend</button>
+        <button onClick={() => setPagina(2)}>Backend</button>
+        <button onClick={() => setPagina(3)}>Fullstack</button>
+        <button onClick={() => setPagina(4)}>Deploy</button>
+        <button onClick={() => setPagina(5)}>Programador</button>
+        <button onClick={() => setPagina(6)}>Estudante</button>
+        <button onClick={() => setPagina(7)}>Resiliente</button>
+        <button onClick={() => setPagina(8)}>Aprendiz</button>
+        <button onClick={() => setPagina(9)}>DevCansado</button>
       </nav>
       <hr />
       {Pagina === -1 && <></>}

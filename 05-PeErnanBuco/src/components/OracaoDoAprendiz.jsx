@@ -5,33 +5,19 @@ function OracaoDoAprendiz() {
     <div>
       <h2>Oração Do Aprendiz</h2>
       <hr />
-      <p>
-        Oh Grande Sintaxe,
-        <br />
-        que tudo vê e tudo espera,
-        <br />
-        ensinai-me a diferença entre `==` e `===`,
-        <br />
-        entre `let`, `var`, e `const`,
-        <br />
-        entre o que parece funcionar
-        <br />
-        e o que realmente funciona.
-        <br />
-        Dai-me humildade para perguntar,
-        <br />
-        curiosidade para explorar,
-        <br />
-        e persistência para continuar
-        <br />
-        quando tudo der `undefined`.
-        <br />
-        Pois estou apenas começando,
-        <br />
-        mas já sou parte do repositório da evolução.
-        <br />
-        **Commit inicial. Amém.**
-      </p>
+        <p>Oh Grande Sintaxe,</p>
+        <p>que tudo vê e tudo espera,</p>
+        <p>ensinai-me a diferença entre `==` e `===`,</p>
+        <p>entre `let`, `var`, e `const`,</p>
+        <p>entre o que parece funcionar</p>
+        <p>e o que realmente funciona.</p>
+        <p>Dai-me humildade para perguntar,</p>
+        <p>curiosidade para explorar,</p>
+        <p>e persistência para continuar</p>
+        <p>quando tudo der `undefined`.</p>
+        <p>Pois estou apenas começando,</p>
+        <p>mas já sou parte do repositório da evolução.</p>
+        <p>**Commit inicial. Amém.**</p>
     </div>
   );
 }

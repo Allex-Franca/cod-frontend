@@ -5,23 +5,14 @@ function OracaodoFrontend() {
     <div>
       <h2>Oração Do Frontend</h2>
       <hr />
-      <p>
-        Ave CSS, cheia de bugs,
-        <br />
-        O framework é convosco,
-        <br />
-        Bendita sois vós entre as telas,
-        <br />
-        E bendito é o fruto do vosso DOM: o pixel perfeito.
-        <br />
-        Santa Documentação, mãe da UI,
-        <br />
-        Rogai por nós, devs visuais,
-        <br />
-        Agora e na hora do push final.
-        <br />
-        Hover.
-      </p>
+        <p>Ave CSS, cheia de bugs,</p>
+        <p>O framework é convosco,</p>
+        <p>Bendita sois vós entre as telas,</p>
+        <p>E bendito é o fruto do vosso DOM: o pixel perfeito.</p>
+        <p>Santa Documentação, mãe da UI,</p>
+        <p>Rogai por nós, devs visuais,</p>
+        <p>Agora e na hora do push final.</p>
+        <p>Hover.</p>
     </div>
   );
 }

@@ -5,29 +5,18 @@ function OracaoDoBackend() {
     <div>
       <h2>Oração Do Backend</h2>
       <hr />
-      <p>
-Nosso código que está no servidor,
-<br />
-Santificado seja o teu endpoint,
-<br />
-Venha a nós o teu JSON,
-<br />
-Seja feita tua lógica,
-<br />
-Assim na API como no banco.
-<br />
-O token nosso de cada dia nos dai hoje,
-<br />
-Perdoai nossas queries mal otimizadas,
-<br />
-Assim como nós perdoamos quem nos envia POST sem body.
-<br />
-E não nos deixes cair em loops infinitos,
-<br />
-Mas livrai-nos do downtime.
-<br />
-Amém, amém, status 200.
-      </p>
+
+      <p>Nosso código que está no servidor,</p>
+      <p>Santificado seja o teu endpoint,</p>
+      <p>Venha a nós o teu JSON,</p>
+      <p>Seja feita tua lógica,</p>
+      <p>Assim na API como no banco.</p>
+      <p>O token nosso de cada dia nos dai hoje,</p>
+      <p>Perdoai nossas queries mal otimizadas,</p>
+      <p>Assim como nós perdoamos quem nos envia POST sem body.</p>
+      <p>E não nos deixes cair em loops infinitos,</p>
+      <p>Mas livrai-nos do downtime.</p>
+      <p>Amém, amém, status 200.</p>
     </div>
   );
 }
