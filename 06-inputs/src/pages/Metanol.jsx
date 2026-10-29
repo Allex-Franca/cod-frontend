@@ -14,36 +14,26 @@ function Metanol() {
     let gasosa = Number(InputAbastecimento);
 
     if (gasosa === 1) {
-      SetInputPortinha({
-        alcool: InputPortinha.alcool + 1,
-        gasolina: InputPortinha.gasolina,
-        diesel: InputPortinha.diesel,
-        obrigado: false,
-      });
-      SetInputAbastecimento("");
+      InputPortinha.alcool++;
     } else if (gasosa === 2) {
-      SetInputPortinha({
-        alcool: InputPortinha.alcool,
-        gasolina: InputPortinha.gasolina + 1,
-        diesel: InputPortinha.diesel,
-        obrigado: false,
-      });
-      SetInputAbastecimento("");
+      InputPortinha.gasolina++;
     } else if (gasosa === 3) {
-      SetInputPortinha({
-        alcool: InputPortinha.alcool,
-        gasolina: InputPortinha.gasolina,
-        diesel: InputPortinha.diesel + 1,
-        obrigado: false,
-      });
-      SetInputAbastecimento("");
+      InputPortinha.diesel++;
     } else if (gasosa === 4) {
-      SetInputPortinha({
-        alcool: InputPortinha.alcool,
-        gasolina: InputPortinha.gasolina,
-        diesel: InputPortinha.diesel,
-        obrigado: true,
-      });
+      InputPortinha.obrigado = true;
+    } else {
+      return;
+    }
+
+    SetInputPortinha({
+      alcool: InputPortinha.alcool,
+      gasolina: InputPortinha.gasolina,
+      diesel: InputPortinha.diesel,
+      obrigado: InputPortinha.obrigado,
+    });
+
+    if (gasosa >= 1 && gasosa <= 3) {
+      SetInputAbastecimento("");
     }
   }
 
