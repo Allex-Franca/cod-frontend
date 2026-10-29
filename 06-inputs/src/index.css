@@ -5,7 +5,8 @@
 .hohoho,
 .AouR,
 .bondinho,
-.bombinha {
+.bombinha,
+.posto{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,6 +31,7 @@
 .AouR,
 .bondinho,
 .bombinha,
+.posto,
 button,
 input {
   border-radius: 10px;

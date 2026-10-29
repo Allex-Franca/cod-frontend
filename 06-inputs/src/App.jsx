@@ -7,6 +7,7 @@ import HoHoHo from "./pages/HoHoHo";
 import Aprovou_ou_Rodou from "./pages/Aprovou_ou_Rodou";
 import Bondinho from "./pages/Bondinho";
 import Bomba from "./pages/Bomba";
+import Metanol from "./pages/Metanol";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <button onClick={() => setPagina(5)}>Aprovou ou Rodou</button>
         <button onClick={() => setPagina(6)}>Bondinho</button>
         <button onClick={() => setPagina(7)}>Bomba</button>
+        <button onClick={() => setPagina(8)}>Metanol</button>
       </nav>
 
       {pagina === 0 && <></>}
@@ -33,6 +35,7 @@ function App() {
       {pagina === 5 && <Aprovou_ou_Rodou />}
       {pagina === 6 && <Bondinho />}
       {pagina === 7 && <Bomba />}
+      {pagina === 8 && <Metanol />}
     </div>
   );
 }
