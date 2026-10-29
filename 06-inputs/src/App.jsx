@@ -4,6 +4,10 @@ import Home from "./pages/Home";
 import Demo from "./pages/Demo";
 import Pneus from "./pages/Pneus";
 import HoHoHo from "./pages/HoHoHo";
+import Aprovou_ou_Rodou from "./pages/Aprovou_ou_Rodou";
+import Bondinho from "./pages/Bondinho";
+import Bomba from "./pages/Bomba";
+
 
 function App() {
   const [pagina,setPagina] = useState();
@@ -16,6 +20,9 @@ function App() {
         <button onClick={() => setPagina(2)}>Demo</button>
         <button onClick={() => setPagina(3)}>Pneus</button>
         <button onClick={() => setPagina(4)}>HO HO HO!</button>
+        <button onClick={() => setPagina(5)}>Aprovou ou Rodou</button>
+        <button onClick={() => setPagina(6)}>Bondinho</button>
+        <button onClick={() => setPagina(7)}>Bomba</button>
       </nav>
 
       {pagina === 0 && <></>}
@@ -23,6 +30,9 @@ function App() {
       {pagina === 2 && <Demo/>}
       {pagina === 3 && <Pneus/>}
       {pagina === 4 && <HoHoHo />}
+      {pagina === 5 && <Aprovou_ou_Rodou />}
+      {pagina === 6 && <Bondinho />}
+      {pagina === 7 && <Bomba />}
     </div>
   );
 }

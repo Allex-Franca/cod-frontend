@@ -2,7 +2,10 @@
 .demo,
 .app,
 .pneus,
-.hohoho {
+.hohoho,
+.AouR,
+.bondinho,
+.bombinha {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,17 +17,30 @@
   border-radius: 10px;
   margin: 10px;
 }
-.btn-demo{
+.btn-demo {
   border-style: hidden;
   cursor: pointer;
   background-color: white;
+}
+.home,
+.demo,
+.app,
+.pneus,
+.hohoho,
+.AouR,
+.bondinho,
+.bombinha,
+button,
+input {
+  border-radius: 10px;
+  border-color: #4f0588;
 }
 
 :root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
-  --border: #e5e4e7;
+  --border: #5020b1;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -97,5 +113,15 @@ h2 {
   }
 }
 p {
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
   margin: 0;
 }

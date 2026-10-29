@@ -13,7 +13,7 @@ function HoHoHo() {
   }
   return (
     <div className="hohoho">
-      <h1>HO HO HO!</h1>
+      <h1>HO HO HO! - Repetição</h1>
       <label htmlFor="">Ho Ho HO!</label>
 
       <input
