@@ -1,10 +1,9 @@
-
 import React, { useState } from "react";
 
 function Metanol() {
   const [InputAbastecimento, SetInputAbastecimento] = useState("");
   const [InputPortinha, SetInputPortinha] = useState({
-    alcool: 0,
+    alcool: 0 ,
     gasolina: 0,
     diesel: 0,
     obrigado: false,
@@ -53,9 +52,9 @@ function Metanol() {
 
       {InputPortinha.obrigado && <p>MUITO OBRIGADO</p>}
 
-      <p>Álcool: {InputPortinha.alcool}</p>
-      <p>Gasolina: {InputPortinha.gasolina}</p>
-      <p>Diesel: {InputPortinha.diesel}</p>
+      <p>Álcool: {InputPortinha.alcool}L</p>
+      <p>Gasolina: {InputPortinha.gasolina}L</p>
+      <p>Diesel: {InputPortinha.diesel}L</p>
     </div>
   );
 }
